@@ -1,0 +1,838 @@
+{
+  "$schema": "https://basalt.run/schemas/manifest.json",
+  "version": "1.0.0",
+  "generatedAt": "2026-03-26T03:14:21.939Z",
+  "projectId": "45ba2905-4183-4ecf-8e73-55791ee8da88",
+  "projectSlug": "basalt-run-test-1-design-system",
+  "projectName": "basalt-run/test-1-design-system",
+  "storybookCompatible": true,
+  "components": {
+    "basalt-run-test-1-design-system-alert": {
+      "id": "basalt-run-test-1-design-system-alert",
+      "name": "Alert",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-test-1-design-system-alert--info",
+          "name": "info",
+          "snippet": "const Info = () => <Alert variant=\"info\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-alert--success",
+          "name": "success",
+          "snippet": "const Success = () => <Alert variant=\"success\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-alert--warning",
+          "name": "warning",
+          "snippet": "const Warning = () => <Alert variant=\"warning\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-alert--error",
+          "name": "error",
+          "snippet": "const Error = () => <Alert variant=\"error\" />;"
+        }
+      ],
+      "import": "import { Alert } from \"@your-org/design-system\";",
+      "description": "Alert communicates important information to users with semantic urgency and contextual color.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"info\" | \"success\" | \"warning\" | \"error\"",
+          "description": "Visual variant",
+          "defaultValue": "info"
+        }
+      },
+      "basalt": {
+        "projectId": "45ba2905-4183-4ecf-8e73-55791ee8da88",
+        "projectSlug": "basalt-run-test-1-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Alert to surface state changes, validation results, or system messages that require user awareness. Display alerts for transient feedback—like a failed API request during form submission—or persistent notices that block workflow progression. Alerts compete for attention; reserve them for information users cannot ignore or overlook.",
+        "never": "Don't stack more than three alerts in a single viewport — cognitive load degrades comprehension. Use Toast instead for non-critical, time-bound notifications that dismiss automatically.",
+        "a11y": "Set role=\"alert\" and aria-live=\"polite\" to announce dynamic alerts to screen readers; use aria-live=\"assertive\" only for error states that block interaction (WCAG 4.1.3).",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-26T03:14:21.364022+00:00"
+      }
+    },
+    "basalt-run-test-1-design-system-avatar": {
+      "id": "basalt-run-test-1-design-system-avatar",
+      "name": "Avatar",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-test-1-design-system-avatar--default",
+          "name": "default",
+          "snippet": "const Default = () => <Avatar />;"
+        }
+      ],
+      "import": "import { Avatar } from \"@your-org/design-system\";",
+      "description": "Avatar displays a user's profile image, initials, or icon in a circular container.",
+      "props": {},
+      "basalt": {
+        "projectId": "45ba2905-4183-4ecf-8e73-55791ee8da88",
+        "projectSlug": "basalt-run-test-1-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Avatar wherever you need to represent a person or account identity—in headers, comment threads, team rosters, or user mentions. Avatars provide instant visual recognition and reduce cognitive load when scanning lists of contributors or collaborators. Choose Avatar over generic icons when the identity of a specific person matters to context.",
+        "never": "Don't use Avatar for generic status indicators or non-human entities — Avatar semantically represents individual identity. Use Badge or Icon instead.",
+        "a11y": "Avatar must have role=\"img\" with an accessible name via aria-label that describes the person represented (e.g., aria-label=\"Sarah Chen, product designer\").",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-26T03:14:21.364022+00:00"
+      }
+    },
+    "basalt-run-test-1-design-system-badge": {
+      "id": "basalt-run-test-1-design-system-badge",
+      "name": "Badge",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-test-1-design-system-badge--default",
+          "name": "default",
+          "snippet": "const Default = () => <Badge />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-badge--success",
+          "name": "success",
+          "snippet": "const Success = () => <Badge variant=\"success\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-badge--warning",
+          "name": "warning",
+          "snippet": "const Warning = () => <Badge variant=\"warning\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-badge--error",
+          "name": "error",
+          "snippet": "const Error = () => <Badge variant=\"error\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-badge--info",
+          "name": "info",
+          "snippet": "const Info = () => <Badge variant=\"info\" />;"
+        }
+      ],
+      "import": "import { Badge } from \"@your-org/design-system\";",
+      "description": "Badge communicates a discrete status, category, or count in a compact, non-interactive label.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"default\" | \"success\" | \"warning\" | \"error\" | \"info\"",
+          "description": "Visual variant",
+          "defaultValue": "default"
+        }
+      },
+      "basalt": {
+        "projectId": "45ba2905-4183-4ecf-8e73-55791ee8da88",
+        "projectSlug": "basalt-run-test-1-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Badge to surface metadata attached to an object—tags on an issue, subscription tier on an account, or count of unreviewed items. Badge occupies minimal space and requires no action, making it appropriate for read-only context. Pair with larger UI elements rather than as standalone emphasis.",
+        "never": "Don't use Badge for actionable states — buttons and toggles are interactive by design. Use Button instead when the element must respond to user input.",
+        "a11y": "Badge must have role=\"status\" when content updates dynamically (WCAG 4.1.3 live regions); use role=\"img\" with aria-label when Badge conveys meaning beyond visible text.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-26T03:14:21.364022+00:00"
+      }
+    },
+    "basalt-run-test-1-design-system-button": {
+      "id": "basalt-run-test-1-design-system-button",
+      "name": "Button",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-test-1-design-system-button--primary",
+          "name": "primary",
+          "snippet": "const Primary = () => <Button variant=\"primary\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-button--neutral",
+          "name": "neutral",
+          "snippet": "const Neutral = () => <Button variant=\"neutral\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-button--ghost",
+          "name": "ghost",
+          "snippet": "const Ghost = () => <Button variant=\"ghost\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-button--danger",
+          "name": "danger",
+          "snippet": "const Danger = () => <Button variant=\"danger\" />;"
+        }
+      ],
+      "import": "import { Button } from \"@your-org/design-system\";",
+      "description": "Button initiates an action or navigation when activated.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"primary\" | \"neutral\" | \"ghost\" | \"danger\"",
+          "description": "Visual variant",
+          "defaultValue": "primary"
+        }
+      },
+      "basalt": {
+        "projectId": "45ba2905-4183-4ecf-8e73-55791ee8da88",
+        "projectSlug": "basalt-run-test-1-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.hover"
+          },
+          {
+            "cssProperty": "gap",
+            "tokenPath": "spacing.3"
+          },
+          {
+            "cssProperty": "gap",
+            "tokenPath": "spacing.5"
+          },
+          {
+            "cssProperty": "border-radius",
+            "tokenPath": "radius.md"
+          },
+          {
+            "cssProperty": "font-size",
+            "tokenPath": "font.size.sm"
+          },
+          {
+            "cssProperty": "font-weight",
+            "tokenPath": "font.weight.medium"
+          }
+        ],
+        "usage": "Reach for Button when you need a single, clear call-to-action—such as submitting a form, opening a modal, or progressing through a workflow. Use primary for the main action on a page, neutral for secondary actions, ghost for tertiary interactions, and danger for destructive operations. In a payment flow, primary triggers payment submission while danger cancels the transaction.",
+        "never": "Don't use Button for navigation between pages—use Link instead. Buttons trigger actions or state changes; links navigate to new URLs.",
+        "a11y": "Button must have role=\"button\" and keyboard support: activated on Enter and Space keys per WCAG 2.1 Level AA, with visible :focus-visible state using color.action.default.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-26T03:14:21.364022+00:00"
+      }
+    },
+    "basalt-run-test-1-design-system-card": {
+      "id": "basalt-run-test-1-design-system-card",
+      "name": "Card",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-test-1-design-system-card--default",
+          "name": "default",
+          "snippet": "const Default = () => <Card />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-card--elevated",
+          "name": "elevated",
+          "snippet": "const Elevated = () => <Card variant=\"elevated\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-card--outlined",
+          "name": "outlined",
+          "snippet": "const Outlined = () => <Card variant=\"outlined\" />;"
+        }
+      ],
+      "import": "import { Card } from \"@your-org/design-system\";",
+      "description": "Card organizes related content into a contained, scannable surface.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"default\" | \"elevated\" | \"outlined\"",
+          "description": "Visual variant",
+          "defaultValue": "default"
+        }
+      },
+      "basalt": {
+        "projectId": "45ba2905-4183-4ecf-8e73-55791ee8da88",
+        "projectSlug": "basalt-run-test-1-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Card to group logically related information—settings panels, product listings, or data summaries. Choose Card over raw containers when content benefits from visual separation and breathing room. Cards establish hierarchy on dense layouts and create natural stopping points for the eye.",
+        "never": "Don't nest interactive surfaces directly inside Card without clear focus management — creates ambiguous tap targets and confuses screen reader users. Use Button or Link as explicit interactive containers instead.",
+        "a11y": "Card must declare role=\"region\" with aria-label describing its content purpose (e.g., aria-label=\"Payment method selection\") to ensure screen reader users understand its semantic function, per WCAG 1.3.1.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-26T03:14:21.364022+00:00"
+      }
+    },
+    "basalt-run-test-1-design-system-checkbox": {
+      "id": "basalt-run-test-1-design-system-checkbox",
+      "name": "Checkbox",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-test-1-design-system-checkbox--unchecked",
+          "name": "unchecked",
+          "snippet": "const Unchecked = () => <Checkbox variant=\"unchecked\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-checkbox--checked",
+          "name": "checked",
+          "snippet": "const Checked = () => <Checkbox variant=\"checked\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-checkbox--indeterminate",
+          "name": "indeterminate",
+          "snippet": "const Indeterminate = () => <Checkbox variant=\"indeterminate\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-checkbox--disabled",
+          "name": "disabled",
+          "snippet": "const Disabled = () => <Checkbox variant=\"disabled\" />;"
+        }
+      ],
+      "import": "import { Checkbox } from \"@your-org/design-system\";",
+      "description": "Checkbox captures binary user input with support for indeterminate state in hierarchical contexts.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"unchecked\" | \"checked\" | \"indeterminate\" | \"disabled\"",
+          "description": "Visual variant",
+          "defaultValue": "unchecked"
+        }
+      },
+      "basalt": {
+        "projectId": "45ba2905-4183-4ecf-8e73-55791ee8da88",
+        "projectSlug": "basalt-run-test-1-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Checkbox when users need to select multiple independent items from a list, such as filtering options or batch actions. Reach for Checkbox over Radio when multiple selections are valid. In forms with nested options, the indeterminate variant signals partial selection of child items.",
+        "never": "Don't use Checkbox as a toggle for immediate state changes — use Toggle instead. Checkbox implies a deferred action pending form submission or explicit confirmation.",
+        "a11y": "Implement role=\"checkbox\" with aria-checked reflecting the current state (true, false, or mixed for indeterminate). Support Space to toggle checked state and Shift+Space to toggle indeterminate state when relevant.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-26T03:14:21.364022+00:00"
+      }
+    },
+    "basalt-run-test-1-design-system-input": {
+      "id": "basalt-run-test-1-design-system-input",
+      "name": "Input",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-test-1-design-system-input--default",
+          "name": "default",
+          "snippet": "const Default = () => <Input />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-input--error",
+          "name": "error",
+          "snippet": "const Error = () => <Input variant=\"error\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-input--disabled",
+          "name": "disabled",
+          "snippet": "const Disabled = () => <Input variant=\"disabled\" />;"
+        }
+      ],
+      "import": "import { Input } from \"@your-org/design-system\";",
+      "description": "Input captures single-line text entry from users.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"default\" | \"error\" | \"disabled\"",
+          "description": "Visual variant",
+          "defaultValue": "default"
+        }
+      },
+      "basalt": {
+        "projectId": "45ba2905-4183-4ecf-8e73-55791ee8da88",
+        "projectSlug": "basalt-run-test-1-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Input for form fields requiring brief text responses: usernames, email addresses, search queries. Prefer Input over Textarea when the expected response fits on one line. In checkout flows, Input ensures consistent data collection across payment and shipping details.",
+        "never": "Don't use Input for multi-line responses — it truncates or wraps text unpredictably. Use Textarea instead.",
+        "a11y": "Input must have an associated label element with matching htmlFor attribute, or an aria-label. Support standard keyboard navigation: Tab to focus, Shift+Tab to move backward, and allow full text selection with Shift+Arrow keys.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-26T03:14:21.364022+00:00"
+      }
+    },
+    "basalt-run-test-1-design-system-modal": {
+      "id": "basalt-run-test-1-design-system-modal",
+      "name": "Modal",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-test-1-design-system-modal--default",
+          "name": "default",
+          "snippet": "const Default = () => <Modal />;"
+        }
+      ],
+      "import": "import { Modal } from \"@your-org/design-system\";",
+      "description": "Modal presents critical information or actions that demand user attention before interaction with the underlying interface can resume.",
+      "props": {},
+      "basalt": {
+        "projectId": "45ba2905-4183-4ecf-8e73-55791ee8da88",
+        "projectSlug": "basalt-run-test-1-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Reach for Modal when blocking interaction is necessary: confirming destructive actions, gathering required input before proceeding, or presenting time-sensitive information. Use it for account deletion confirmations, API key generation, or subscription plan selection—not for non-blocking notifications or optional information.",
+        "never": "Don't nest Modals within Modals — this fragments context and breaks predictable navigation patterns. Use a stepped Dialog or sequential Modals with proper state management instead.",
+        "a11y": "Implement role=\"dialog\" with aria-modal=\"true\", trap keyboard focus within the Modal container, and restore focus to the trigger element on close per WCAG 2.1 criterion 2.4.3.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-26T03:14:21.364022+00:00"
+      }
+    },
+    "basalt-run-test-1-design-system-navigation": {
+      "id": "basalt-run-test-1-design-system-navigation",
+      "name": "Navigation",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-test-1-design-system-navigation--default",
+          "name": "default",
+          "snippet": "const Default = () => <Navigation />;"
+        }
+      ],
+      "import": "import { Navigation } from \"@your-org/design-system\";",
+      "description": "Navigation organizes primary sections of an application into a persistent, scannable menu.",
+      "props": {},
+      "basalt": {
+        "projectId": "45ba2905-4183-4ecf-8e73-55791ee8da88",
+        "projectSlug": "basalt-run-test-1-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Navigation as the main way to move between top-level sections of your product. It should appear consistently across all pages to orient users within information hierarchy. Deploy it in dashboard applications, documentation sites, or multi-section platforms where users need reliable wayfinding.",
+        "never": "Don't nest Navigation within other navigational components — it creates competing hierarchies and confuses wayfinding. Use Breadcrumb for sub-level navigation instead.",
+        "a11y": "Navigation must use role=\"navigation\" and contain a list element with proper aria-current=\"page\" on the active item to meet WCAG 2.1 Level AA structure requirements.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-26T03:14:21.364022+00:00"
+      }
+    },
+    "basalt-run-test-1-design-system-select": {
+      "id": "basalt-run-test-1-design-system-select",
+      "name": "Select",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-test-1-design-system-select--default",
+          "name": "default",
+          "snippet": "const Default = () => <Select />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-select--error",
+          "name": "error",
+          "snippet": "const Error = () => <Select variant=\"error\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-select--disabled",
+          "name": "disabled",
+          "snippet": "const Disabled = () => <Select variant=\"disabled\" />;"
+        }
+      ],
+      "import": "import { Select } from \"@your-org/design-system\";",
+      "description": "Select presents a list of mutually exclusive options in a collapsible dropdown interface.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"default\" | \"error\" | \"disabled\"",
+          "description": "Visual variant",
+          "defaultValue": "default"
+        }
+      },
+      "basalt": {
+        "projectId": "45ba2905-4183-4ecf-8e73-55791ee8da88",
+        "projectSlug": "basalt-run-test-1-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Select when users must choose one value from a predefined set of three or more options. Reach for it in forms like country selection during signup, filtering datasets by status, or choosing a plan tier. Reserve it for stable option sets that rarely change; if options are dynamic or users frequently add new values, consider Combobox instead.",
+        "never": "Don't open the dropdown on focus alone — doing so creates unexpected interactions for keyboard and assistive technology users. Use onChange handlers that trigger only on selection instead.",
+        "a11y": "Implement role=\"listbox\" on the dropdown container and role=\"option\" on each item. Support arrow key navigation (Up/Down to move focus, Enter/Space to select) and Escape to close without selection.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-26T03:14:21.364022+00:00"
+      }
+    },
+    "basalt-run-test-1-design-system-table": {
+      "id": "basalt-run-test-1-design-system-table",
+      "name": "Table",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-test-1-design-system-table--default",
+          "name": "default",
+          "snippet": "const Default = () => <Table />;"
+        }
+      ],
+      "import": "import { Table } from \"@your-org/design-system\";",
+      "description": "Table displays structured data in rows and columns with semantic HTML markup and keyboard navigation support.",
+      "props": {},
+      "basalt": {
+        "projectId": "45ba2905-4183-4ecf-8e73-55791ee8da88",
+        "projectSlug": "basalt-run-test-1-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Table to present tabular data that benefits from sorting, filtering, or comparison across dimensions—such as transaction histories, user lists, or analytics reports. Avoid Table for layout purposes; reach for Grid instead. Table is optimal when data has a clear categorical structure and users need to scan or interact with multiple rows.",
+        "never": "Don't use nested Tables to represent hierarchical data — this breaks keyboard navigation and screen reader semantics. Use a disclosure pattern with expandable rows instead.",
+        "a11y": "Implement role=\"table\" on the root element, role=\"row\" on each row, role=\"columnheader\" on header cells, and role=\"gridcell\" on data cells; support arrow key navigation between focusable cells per WCAG 2.1 Level AA.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-26T03:14:21.364022+00:00"
+      }
+    },
+    "basalt-run-test-1-design-system-tabs": {
+      "id": "basalt-run-test-1-design-system-tabs",
+      "name": "Tabs",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-test-1-design-system-tabs--default",
+          "name": "default",
+          "snippet": "const Default = () => <Tabs />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-tabs--pills",
+          "name": "pills",
+          "snippet": "const Pills = () => <Tabs variant=\"pills\" />;"
+        }
+      ],
+      "import": "import { Tabs } from \"@your-org/design-system\";",
+      "description": "Tabs organize content into separate views within a single context, allowing users to switch between them without leaving the page.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"default\" | \"pills\"",
+          "description": "Visual variant",
+          "defaultValue": "default"
+        }
+      },
+      "basalt": {
+        "projectId": "45ba2905-4183-4ecf-8e73-55791ee8da88",
+        "projectSlug": "basalt-run-test-1-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use tabs when presenting multiple related content sections that users may compare or reference sequentially—such as account settings (Profile, Security, Billing) or documentation sections (Overview, API Reference, Examples). Tabs reduce cognitive load by hiding secondary content until needed. Reserve tabs for 2–6 items; beyond that, consider a sidebar or dropdown navigation.",
+        "never": "Don't nest tabs within tabs — it fragments information hierarchy and creates confusing keyboard navigation. Use a sidebar or accordion component instead.",
+        "a11y": "Implement the tablist role with tab and tabpanel roles; selected tab must have aria-selected=\"true\" and aria-controls pointing to its panel. Support arrow key navigation (left/right arrows move focus between tabs), with Enter or Space activating the focused tab.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-26T03:14:21.364022+00:00"
+      }
+    },
+    "basalt-run-test-1-design-system-toggle": {
+      "id": "basalt-run-test-1-design-system-toggle",
+      "name": "Toggle",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-test-1-design-system-toggle--on",
+          "name": "on",
+          "snippet": "const On = () => <Toggle variant=\"on\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-toggle--off",
+          "name": "off",
+          "snippet": "const Off = () => <Toggle variant=\"off\" />;"
+        },
+        {
+          "id": "basalt-run-test-1-design-system-toggle--disabled",
+          "name": "disabled",
+          "snippet": "const Disabled = () => <Toggle variant=\"disabled\" />;"
+        }
+      ],
+      "import": "import { Toggle } from \"@your-org/design-system\";",
+      "description": "Toggle switches between two mutually exclusive states with a single interaction.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"on\" | \"off\" | \"disabled\"",
+          "description": "Visual variant",
+          "defaultValue": "on"
+        }
+      },
+      "basalt": {
+        "projectId": "45ba2905-4183-4ecf-8e73-55791ee8da88",
+        "projectSlug": "basalt-run-test-1-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Toggle for binary settings or feature flags where the current state must be immediately visible. Prefer Toggle over Checkbox when the action takes effect instantly without form submission—like enabling notifications in settings or activating a beta feature. Toggle makes state more salient than Checkbox through its larger interactive target and kinetic feedback.",
+        "never": "Don't use Toggle for yes/no questions in forms — this creates ambiguity about whether the user is answering a question or setting a value. Use Checkbox instead, which has clearer semantic intent in form contexts.",
+        "a11y": "Implement Toggle with role=\"switch\" and aria-checked=\"true|false\" to distinguish it from Checkbox. Toggle must toggle state on Space and Enter key press, not require additional button activation.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-26T03:14:21.364022+00:00"
+      }
+    },
+    "basalt-run-test-1-design-system-tooltip": {
+      "id": "basalt-run-test-1-design-system-tooltip",
+      "name": "Tooltip",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-test-1-design-system-tooltip--default",
+          "name": "default",
+          "snippet": "const Default = () => <Tooltip />;"
+        }
+      ],
+      "import": "import { Tooltip } from \"@your-org/design-system\";",
+      "description": "Tooltip displays supplementary information on hover or focus, anchored to a trigger element.",
+      "props": {},
+      "basalt": {
+        "projectId": "45ba2905-4183-4ecf-8e73-55791ee8da88",
+        "projectSlug": "basalt-run-test-1-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use tooltips to clarify UI elements with brief, non-essential context—such as explaining an icon button's function or showing a truncated label's full text. Reserve tooltips for information users can safely ignore; critical information belongs in the main interface or a popover. On mobile, consider whether hover is feasible or if an alternative disclosure pattern suits better.",
+        "never": "Don't place actionable content inside a tooltip — tooltips dismiss on blur and users cannot reliably interact with them. Use a popover or dialog instead.",
+        "a11y": "Implement the tooltip role with aria-describedby linking the trigger to the tooltip content, and ensure keyboard users can access the tooltip via focus on the trigger element (not hover-only).",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-26T03:14:21.364022+00:00"
+      }
+    }
+  }
+}
